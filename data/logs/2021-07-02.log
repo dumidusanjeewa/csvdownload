@@ -1,0 +1,4 @@
+21:59:05 | error | Failed to connect to MySQL: Access denied for user 'roots'@'localhost' (using password: NO)
+22:01:07 | info | Start to build the report
+22:14:40 | info | Start to build the report
+22:54:40 | error | Trying to request invalid report.

@@ -1,0 +1,12 @@
+RewriteEngine On 
+ErrorDocument 404 /404.html
+#Options -Indexes
+
+
+RewriteRule ^report/brandwise/?$ /gapstars/public/genReport.php?type=brandwise [L]
+RewriteRule ^report/daywise/?$ /gapstars/public/genReport.php?type=daywise [L]
+RewriteCond %{REQUEST_URI} !^/gapstars/public/index.php
+RewriteCond %{REQUEST_URI} !^/gapstars/public/genReport.php
+RewriteRule ^(.*) /gapstars/public/index.php [L]
+
+
